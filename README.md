@@ -35,12 +35,12 @@
 ### Official Simple & Minimalist PyTorch Implementation
 
 ## 📢 News
-- Codes will be released in the next few weeks due to extensive supports and cleaning on Text-to-Motion, Controllable Generation, and direct text-to-SMPL-H vertices motion generation.
+- Code will be released in the next few weeks due to extensive support and cleaning on text-to-motion generation, controllable generation, and direct text-to-SMPL-H vertices motion generation.
 
 ## 📜 TODO List
-- [ ] Release the clean codes for implementation.
+- [ ] Release the clean code for implementation.
 - [ ] Release the evaluation codes and the pretrained models.
-- [ ] Release the simple and minimalist version of codes for implementation.
+- [ ] Release the simple and minimalist version of code for implementation.
 
 
 ## 🍀 Acknowledgments
