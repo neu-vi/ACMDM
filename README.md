@@ -72,4 +72,4 @@ If you find this repository useful for your work, please consider citing it as f
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=neu-vi/ACMDM&type=Date)](https://www.star-history.com/#neu-vi/ACMDM&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=neu-vi/ACMDM&type=Date)](https://star-history.com/#neu-vi/ACMDM&Date)
