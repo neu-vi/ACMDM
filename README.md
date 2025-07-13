@@ -34,6 +34,8 @@
 
 ### Official Simple & Minimalist PyTorch Implementation
 
+#### It's quite a rush for me to clean all of the codes. Please let me know if I made any mistakes in the code. Also, I forgot to upload ACMDM-XL-PS2 to G-Drive, will also try to update that as well :).
+
 ## 📜 TODO List
 - [x] Release the clean code for joint level motion generation
 - [x] Release the clean code for controllable motion generation
