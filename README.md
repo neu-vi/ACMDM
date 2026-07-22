@@ -56,6 +56,8 @@ We test our code on Python 3.10.13, PyTorch 2.2.0, and CUDA 12.1
 
 ### 2. Models and Dependencies
 
+Due to the deactivation of the previous Google account, we have migrated all model files to [Hugging Face](https://huggingface.co/collections/cr8br0ze/acmdm).
+
 #### Download Evaluation Models
 ```bash
 rm -rf checkpoints
@@ -65,7 +67,9 @@ mkdir t2m
 
 cd t2m 
 echo -e "Downloading evaluation models for HumanML3D dataset"
-gdown --fuzzy https://drive.google.com/file/d/1ejiz4NvyuoTj3BIdfNrTFFZBZ-zq4oKD/view?usp=sharing
+wget -c \
+  https://huggingface.co/cr8br0ze/evaluators_humanml3d/resolve/main/evaluators_humanml3d.zip \
+  -O evaluators_humanml3d.zip
 echo -e "Unzipping humanml3d evaluators"
 unzip evaluators_humanml3d.zip
 
@@ -96,23 +100,39 @@ cd checkpoints/t2m
 echo -e "Downloading pretrained models for HumanML3D dataset"
 # Joint Level
 # 2D Causal AE
-gdown --fuzzy https://drive.google.com/file/d/1MdGC2ioAwbcfIBJgXCuXFFaWiNLEIPkN/view?usp=drive_link
+wget -c \
+  https://huggingface.co/cr8br0ze/AE_2D_Causal/resolve/main/AE_2D_Causal.zip \
+  -O AE_2D_Causal.zip
 # ACMDM-S-PS22
-gdown --fuzzy https://drive.google.com/file/d/1G0g1-K9oGJPxz-vcmnLNfg5jNpQN4Iho/view?usp=drive_link
+wget -c \
+  https://huggingface.co/cr8br0ze/ACMDM_Flow_S_PatchSize22/resolve/main/ACMDM_Flow_S_PatchSize22.zip \
+  -O ACMDM_Flow_S_PatchSize22.zip
 # ACMDM-S-PS22 Prefix AR
-gdown --fuzzy https://drive.google.com/file/d/1Dpf70qpVOAEggKRrSE97q9ZaRnWhrEsS/view?usp=drive_link
+wget -c \
+  https://huggingface.co/cr8br0ze/ACMDM_PrefixAR_Flow_S_PatchSize22/resolve/main/ACMDM_PrefixAR_Flow_S_PatchSize22.zip \
+  -O ACMDM_PrefixAR_Flow_S_PatchSize22.zip
 # ACMDM-S-PS22 Noisy Prefix AR
-gdown --fuzzy https://drive.google.com/file/d/1TbmicpGFmIpUtaWN6MWFX4Ki9u87alLU/view?usp=drive_link
+wget -c \
+  https://huggingface.co/cr8br0ze/ACMDM_NoisyPrefixAR_Flow_S_PatchSize22/resolve/main/ACMDM_NoisyPrefixAR_Flow_S_PatchSize22.zip \
+  -O ACMDM_NoisyPrefixAR_Flow_S_PatchSize22.zip
 # Controls
 # ACMDM-S-PS22-ControlNet
-gdown --fuzzy https://drive.google.com/file/d/1q2qhYVMZgj2A7s__HBaS-k5pl0URtk8K/view?usp=drive_link
+wget -c \
+  https://huggingface.co/cr8br0ze/ACMDM_Flow_S_PatchSize22_ControlNet/resolve/main/ACMDM_Flow_S_PatchSize22_ControlNet.zip \
+  -O ACMDM_Flow_S_PatchSize22_ControlNet.zip
 # Mesh Level
 # Mesh AE
-gdown --fuzzy https://drive.google.com/file/d/1RndgH9PSLUJbSDd1cfo4UDOYBdjj7lqV/view?usp=drive_link
+wget -c \
+  https://huggingface.co/cr8br0ze/AE_Mesh/resolve/main/AE_Mesh.zip \
+  -O AE_Mesh.zip
 # ACMDM-S-PS28 Mesh
-gdown --fuzzy https://drive.google.com/file/d/131uH2kbQxJnj9o4DcgI2drOvIFTHw3Ao/view?usp=sharing
+wget -c \
+  https://huggingface.co/cr8br0ze/ACMDM_Mesh_Flow_S_PatchSize28/resolve/main/ACMDM_Mesh_Flow_S_PatchSize28.zip \
+  -O ACMDM_Mesh_Flow_S_PatchSize28.zip
 # Length Estimator
-gdown --fuzzy https://drive.google.com/file/d/1nWoEcN4rEFKi4Xyf_ObKinDmSQNPKXgU/view?usp=drive_link
+wget -c \
+  https://huggingface.co/cr8br0ze/length_estimator/resolve/main/length_estimator.zip \
+  -O length_estimator.zip
 echo -e "Unzipping"
 unzip AE_2D_Causal.zip
 unzip ACMDM_Flow_S_PatchSize22.zip
